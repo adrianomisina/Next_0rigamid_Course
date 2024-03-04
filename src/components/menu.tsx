@@ -9,11 +9,11 @@ const Menu = () => {
       </li>
 
       <li>
-        <Link href="/sobre#empresa" scroll={false}>Sobre</Link>
+        <Link href="/sobre" >Sobre</Link>
       </li>
 
       <li>
-        <Link href="/contato">Contato</Link>
+        <Link href="/imc" >IMC</Link>
       </li>
     </ul>
   )

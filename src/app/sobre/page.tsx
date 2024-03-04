@@ -1,19 +1,15 @@
-import { Metadata } from 'next';
-import React from 'react'
+import dynamic from "next/dynamic"
 
-export const metadata: Metadata = {
-  title: 'Sobre',
-  description: 'Essa é a página sobre.'
-};
+const WidthPage = dynamic(()=> import ('@/components/width'), {ssr:false})
 
+const SobrePage = () => {
 
-const Sobre = () => {
   return (
     <main>
-      <h2>Sobre</h2>
-      <h2 id="empresa" style={{margin: '1600px 0'}}>A Empresa</h2>
+      <h1>Sobre</h1>
+      <WidthPage />
     </main>
   )
 }
 
-export default Sobre
+export default SobrePage
